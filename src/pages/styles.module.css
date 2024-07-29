@@ -1,0 +1,160 @@
+/* Movie details */
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieDetailsStyleContainer {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.movieDetailsStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerMoviesDetails {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  gap: 20px;
+}
+
+.containerContent {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #253745;
+  color: #ccd0cf;
+  width: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.movieDetailsDescr {
+  display: block;
+}
+
+.movieDetailsTitle {
+  text-align: center;
+  color: #ccd0cf;
+}
+
+.movieDetailsImg {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.containerCastReviewsList {
+  display: flex;
+  justify-content: center;
+}
+
+.castReviewsList {
+  padding: 0;
+  margin-top: 20px;
+  color: #ccd0cf;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.castLink {
+  text-decoration: none;
+  color: #9ba8ab;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.castLink:hover,
+.castLink:focus {
+  color: #ccd0cf;
+}
+
+@media screen and (min-width: 768px) {
+  .movieDetailsStyle {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .movieDetailsTitle {
+    text-align: start;
+  }
+
+  .containerMoviesDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .containerContent {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .movieDetailsImg {
+    width: 300px;
+    border-radius: 20px;
+    height: 450px;
+  }
+
+  .containerCastReviewsList {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+/* Cast page */
+
+.castTitle {
+  color: #ccd0cf;
+  margin-top: 60px;
+}
+
+.castList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ccd0cf;
+}
+
+.castListItem {
+  /* width: 160px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.castImg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Reviews page */
+
+.reviewsTitle {
+  color: #ccd0cf;
+  margin-top: 60px;
+}
+
+.reviewsList {
+  padding: 20px;
+  list-style: none;
+  background-color: #253745;
+  border-radius: 20px;
+}
+
+.reviewsListItem {
+  color: #ccd0cf;
+}

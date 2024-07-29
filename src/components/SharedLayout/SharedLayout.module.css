@@ -1,0 +1,103 @@
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.header {
+  background-color: #06141b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.mainLogo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: #9ba8ab;
+  text-transform: uppercase;
+}
+
+.movieIcon {
+  width: 30px;
+  height: auto;
+  color: #9ba8ab;
+  transition: color 0.3s ease;
+}
+
+.movieFinderTitle {
+  display: none;
+  transition: color 0.3s ease;
+}
+
+.mainLogo:hover .movieIcon,
+.mainLogo:focus .movieIcon {
+  color: #ccd0cf;
+}
+
+.mainLogo:hover .movieFinderTitle,
+.mainLogo:focus .movieFinderTitle {
+  color: #ccd0cf;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigationItem {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #9ba8ab;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.navigationItem:hover {
+  color: #ccd0cf;
+}
+
+@media screen and (min-width: 768px) {
+  .containerHeader {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .movieIcon {
+    width: 40px;
+  }
+
+  .movieFinderTitle {
+    display: block;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigationList {
+    gap: 60px;
+    font-size: 22px;
+  }
+}
